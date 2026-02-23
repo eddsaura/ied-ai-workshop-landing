@@ -1,0 +1,156 @@
+#root {
+  width: 100%;
+}
+
+.page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 4rem 1.25rem 3rem;
+}
+
+.hero {
+  padding: 3rem 0 2.5rem;
+  border-bottom: 1px solid #eceaea;
+}
+
+.eyebrow {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #5f5f5f;
+  font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: #111;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 7vw, 5.2rem);
+  line-height: 0.98;
+  margin: 0.75rem 0 1.1rem;
+}
+
+h1 span {
+  color: #ff3232;
+}
+
+.lead,
+p,
+li,
+a {
+  font-family: 'Inter', sans-serif;
+  color: #222;
+}
+
+.lead {
+  max-width: 700px;
+  font-size: 1.08rem;
+  line-height: 1.65;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.teacher-card {
+  border: 1px solid #eceaea;
+  border-left: 4px solid #ff3232;
+  padding: 1.2rem;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.teacher-name {
+  font-weight: 600;
+}
+
+a {
+  color: #bb1d1d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 3rem;
+}
+
+.pillars article {
+  border-top: 1px solid #111;
+  padding-top: 1rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.8rem;
+}
+
+.stats div {
+  padding: 1rem;
+  border: 1px solid #eceaea;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.value {
+  font-family: 'Fraunces', serif;
+  font-size: 2.2rem;
+  line-height: 1;
+  margin: 0.2rem 0 0.4rem;
+  color: #ff3232;
+}
+
+.agenda {
+  border-top: 1px solid #eceaea;
+  padding-top: 2rem;
+}
+
+.agenda ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.agenda li {
+  border-bottom: 1px solid #eceaea;
+  padding: 0.8rem 0;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eceaea;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+@media (max-width: 900px) {
+  .split,
+  .pillars,
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .page {
+    padding-top: 2.2rem;
+  }
+}
