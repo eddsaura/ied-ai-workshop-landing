@@ -39,6 +39,25 @@ const agenda = [
   'Live build: from concept to deployed landing page',
 ]
 
+const iedPhotos = [
+  {
+    src: 'https://www.ied.edu/_default_upload_bucket/38200/image-thumb__38200__scaleByWidth1000/IED_barcelona_hero_image_2026.jpg',
+    alt: 'IED Barcelona hero view',
+  },
+  {
+    src: 'https://www.ied.edu/laboratories/spain/barcelona/Point%20One%20%282023%29/14787/image-thumb__14787__scaleByWidth800/Fachada-1.jpg',
+    alt: 'IED Barcelona Point One facade',
+  },
+  {
+    src: 'https://www.ied.edu/laboratories/spain/barcelona/Point%20One%20%282023%29/14812/image-thumb__14812__scaleByWidth800/Open-Space-2.jpg',
+    alt: 'IED Barcelona open space',
+  },
+  {
+    src: 'https://www.ied.edu/laboratories/spain/barcelona/Point%20One%20%282023%29/14826/image-thumb__14826__scaleByWidth800/Terraza.jpg',
+    alt: 'IED Barcelona terrace',
+  },
+]
+
 function App() {
   return (
     <main className="page">
@@ -133,6 +152,29 @@ function App() {
             <li key={point}>{point}</li>
           ))}
         </ul>
+      </motion.section>
+
+      <motion.section
+        className="gallery"
+        initial={{ opacity: 0, y: 18 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.25 }}
+        transition={{ duration: 0.6 }}
+      >
+        <h2>IED Barcelona · Spaces</h2>
+        <div className="gallery-grid">
+          {iedPhotos.map((photo, i) => (
+            <motion.figure
+              key={photo.src}
+              initial={{ opacity: 0, y: 14 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.45, delay: i * 0.08 }}
+            >
+              <img src={photo.src} alt={photo.alt} loading="lazy" />
+            </motion.figure>
+          ))}
+        </div>
       </motion.section>
 
       <footer>
