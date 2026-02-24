@@ -97,6 +97,7 @@ function App() {
               Web Apps
               <br />
               <span className="accent-italic">Without Code</span>
+              With Jose
             </motion.h1>
             <motion.p
               className="hero-lead"
