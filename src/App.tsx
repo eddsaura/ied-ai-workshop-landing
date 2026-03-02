@@ -3,7 +3,7 @@ import { motion } from 'motion/react'
 
 const pillars = [
   {
-    title: 'From prompts to products',
+    title: 'From prompts to real products',
     text: 'How natural language + AI agents compress the path from idea to shipped web app.',
   },
   {
